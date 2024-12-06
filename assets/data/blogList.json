@@ -4,13 +4,81 @@
         "title": "Understanding React Hooks",
         "author": "Rashad Naghiyev",
         "date": "2024-12-06",
-        "content": "React Hooks are functions that let you use state and lifecycle features in functional components..."
+        "type": "latest-blog",
+        "img": "",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": 2,
+        "title": "FSB Uses Trojan App to Monitor Russian Programmer Accused of Supporting Ukraine",
+        "author": "Rashad Naghiyev",
+        "date": "2024-12-05",
+        "type": "latest-blog",
+        "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqJ75gjpg8k9dVxTKKsF6qYQzR4IDldFkYCQzUErYTicEA7XHnTiIAFYj-7LQpvnVVRlHUAFwPqOxoe6W4x2dm5h2yRkKNaoNbqu3_Ciei3VitMgxBHQzeNTdBou62tijV1CJmipKBnBiQfIgmEi3J4h3HL9D2grw1IuTTIjyIJrV1t8u0nZ3JuSVZEO8M/s728-rw-e365/programmer.png",
+        "content": "A Russian programmer accused of donating money to Ukraine had his Android device secretly implanted with spyware by the Federal Security Service (FSB) after he was detained earlier this year.The findings come as part of a collaborative investigation by First Department and the University of Toronto's Citizen Lab.'The spyware placed on his device allows the operator to track a target device's location, record phone calls, keystrokes, and read messages from encrypted messaging apps, among other capabilities,' according to the report.In May 2024, Kirill Parubets was released from custody after a 15-day period in administrative detention by Russian authorities, during which time his phone, an Oukitel WP7 phone running Android 10, was confiscated from him."
       },
       {
         "id": 2,
         "title": "Introduction to React Router",
         "author": "Rashad Naghiyev",
         "date": "2024-12-05",
-        "content": "React Router is a standard library for routing in React applications..."
+        "type": "latest-blog",
+        "img": "",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": 2,
+        "title": "Introduction to React Router",
+        "author": "Rashad Naghiyev",
+        "date": "2024-12-05",
+        "type": "",
+        "img": "",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": 2,
+        "title": "Introduction to React Router",
+        "author": "Rashad Naghiyev",
+        "date": "2024-12-05",
+        "type": "latest-blog",
+        "img": "",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": 2,
+        "title": "Introduction to React Router",
+        "author": "Rashad Naghiyev",
+        "date": "2024-12-05",
+        "type": "latest-blog",
+        "img": "",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": 2,
+        "title": "Introduction to React Router",
+        "author": "Rashad Naghiyev",
+        "date": "2024-12-05",
+        "type": "",
+        "img": "",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": 2,
+        "title": "Introduction to React Router",
+        "author": "Rashad Naghiyev",
+        "date": "2024-12-05",
+        "type": "",
+        "img": "",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": 2,
+        "title": "Introduction to React Router",
+        "author": "Rashad Naghiyev",
+        "date": "2024-12-05",
+        "type": "",
+        "img": "",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
       }
+      
 ]

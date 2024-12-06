@@ -1,7 +1,8 @@
 // main.js
+import { getBlogs } from './fetchBlogList.js'
+import { getProjects } from './fetchMyProjects.js'
 
 // Get the toggle button and icons
-console.log('Hello')
 const toggleButton = document.getElementById('dark-mode-toggle');
 const lightIcon = document.getElementById('icon-light');
 const darkIcon = document.getElementById('icon-dark');
@@ -21,3 +22,5 @@ toggleButton.addEventListener('click', () => {
     darkIcon.style.display = darkModeEnabled ? 'none' : 'block';
 });
 
+getBlogs();
+getProjects();

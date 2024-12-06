@@ -19,6 +19,8 @@
     --purple: purple;
     --red: red;
     --card-v1-color: rgb(235, 248, 175);
+    --project-item-color: #bec7ce;
+    --project-item-hover-color: #e0e4e6;
     --font-size: 20px;
     --font-family: 'Arial, sans-serif';
     --spacing-unit: 10px;
@@ -32,6 +34,8 @@
     --text-color: #ffffff;
     --link-color: #4caf50;
     --card-v1-color: rgb(65, 78, 7);
+    --project-item-color: #43474b;
+    --project-item-hover-color: #939699;
 }
 
 body {
@@ -82,7 +86,8 @@ nav {
     z-index: 1000;
     align-items: center;
     gap: var(--spacing-unit);
-    margin: 0 0 calc(2 * var(--font-size));
+    margin: 0 0 calc(2 * var(--spacing-unit));
+    padding: var(--spacing-unit) 0;
     background-color: rgb(30, 167, 177);
     color: #FFFFFF;
     border-radius: 5px;
@@ -125,6 +130,9 @@ nav a {
 /* Section Elements */
 .section-v1 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
     align-items: baseline;
     padding: var(--spacing-unit) var(--spacing-unit);
     margin: var(--spacing-unit) 0;
@@ -134,12 +142,23 @@ nav a {
 
 .card-v1 {
     height: auto;
-    width: 50%;
+    width: 30%;
     padding: var(--spacing-unit) var(--spacing-unit);
     background-color: var(--card-v1-color);
     border-radius: 10px;
     gap: var(--spacing-unit);
     transition: background-color 0.3s;
+}
+
+.blog-img {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-content {
+    max-height: 300px;
+    overflow: hidden;
 }
 
 .page-header {
@@ -148,7 +167,7 @@ nav a {
     text-align: center;
     margin: var(--spacing-unit) 0;
     padding: var(--spacing-unit 0);
-    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
 
 @media (max-width: 768px) {
@@ -170,6 +189,7 @@ nav a {
 /* Banner elements */
 .banner-block {
     display: flex;
+    gap: 10px;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -177,17 +197,17 @@ nav a {
     overflow: hidden;
     height: auto;
     width: 100%;
-    background-color: #f1f1f1; /* Fallback background color */
-    border-radius: var(--spacing-unit);
 }
 
 .banner-img {
     max-height: 400px;
-    width: 100%;
+    width: 50%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .banner-content {
+    display: none;
     position: absolute; /* Overlay positioning */
     color: #fff;
     text-align: center;
@@ -210,24 +230,29 @@ nav a {
 /* Project Items*/
 
 .project-item {
+    height: auto;
     max-width: 300px;
-    background-color: #bec7ce;
+    background-color: var(--project-item-color);
     border: 1px solid #333;
     border-radius: 25px;
     overflow: hidden;
+    margin: var(--spacing-unit) var(--spacing-unit);
+    padding: var(--spacing-unit) var(--spacing-unit);
+    gap: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
 }
 
 .project-item:hover {
-    transform: scale(1.05) rotate(1deg); /* Slightly enlarges the card */
+    transform: scale(1.05); /* Slightly enlarges the card */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow for a lifted look */
-    background-color: #e0e4e6;
+    background-color: var(--project-item-hover-color);
 }
 
 
 .project-item img {
     width: 100%;
-    max-height: 500px;
+    max-height: 200px;
+    min-height: 200px;
     object-fit: cover;
     border-radius: 25px;
     transition: transform 0.3s ease; /* Image-specific animation */
@@ -238,9 +263,15 @@ nav a {
 }
 
 .project-content {
-    margin: var(--spacing-unit) ;
+    margin: var(--spacing-unit);
 }
 
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%;
+    }
+ 
+}
 
 /* 3D or 2D items */
 .card {
