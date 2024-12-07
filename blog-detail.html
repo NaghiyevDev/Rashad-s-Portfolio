@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Detail</title>
+<link rel="stylesheet" href="./assets/css/style.css">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<nav> 
+    <div class="logo-block"> 
+          <a href="/">
+        Rashad's Portfolio
+          </a>
+    </div>
+  <div class="nav-links">
+     <a href="/">Home</a>
+     <a href="">About</a>
+     <a href="">Contact</a>
+     <button class="dark-mode-btn" id="dark-mode-toggle">
+        <span id="icon-light" style="display: none;">🌞</span>
+        <span id="icon-dark">🌙</span>
+    </button>
+
+    </div>
+</nav>
+
+<!--
+<div class="banner-block">
+     <img class="banner-img" src="https://www.internetcreation.net/wp-content/uploads/2015/04/banner-web-development.png">
+          <img class="banner-img" src="https://www.internetcreation.net/wp-content/uploads/2015/04/banner-web-development.png">
+
+     <div class="banner-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my projects and journey</p>
+    </div>
+</div>
+-->
+
+<div class="ads-banner-block">
+    <a href="https://appomni.com/reports/state-of-saas-security/?utm_campaign=State%20of%20SaaS%20Security%20Report%202024%20FY25&utm_source=the-hacker-news&utm_medium=content-recommendation&utm_term=v2&utm_content=december-2024" rel="noopener noreferrer" target="_blank">
+     <img class="banner-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHerhP5oX79YIjnxWlF3152QbykMSJxmmArwPW9EIMxMsA00kw5sk-1cGWdsKo-lcYeFBjoczvf0jMRwqENU1yxP5ZLLPsGoLqqD_Fclagse8ZPJfXfXywi3Kul6A3tslYVQ3e_BGNQNKncmvFmH1ykYq84jR-h1RXR1T6NeiKhO3FqavOtWFQgJrVDWsR/s728-rw-e100/sss-v2-d.png">
+    </a>
+</div>
+
+<div class="blog-detail-page">
+
+<section class="blog-detail-container">
+    <!-- Blog Content -->
+    <div class="blog-detail">
+        <div class="card" id="blog-detail">
+            <!-- Dynamic blog details will be rendered here -->
+        </div>
+    </div>
+</section>
+
+<!-- Advertisement Section -->
+<section class="ads-container">
+<div class="ad-section">
+    <div class="ad-item">
+        <img src="./assets/gallery/navigif.gif" alt="Ad 1">
+       <!-- <p> Ad Description 1</p> -->
+    </div>
+     <div class="ad-item">
+     <a href="https://wing.security/free-saas-discovery/" rel="noopener noreferrer" target="_blank">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvmAyaMRgm1DtNQlVSFMAAcWRINotu7O4RKbN2H1AX3ScnDRdmTqI8M2JuUCIcv-bjdE8z_0LURp6l3q9fvBgEUELkbvQflxj7JbEmF_zdxMfrQeToW9TSVTGdtWN1SaYrLwM0oeGFOLf4DjfuArlr33tmKAPCU5urwML5aQ7FoJpLm4AuEFOoKvubY514/s300-e100/side-3.png" alt="Ad 1">
+      </a>
+       <!-- <p> Ad Description 1</p> -->
+    </div>
+    <div class="ad-item">
+      <a href="https://www.vonahi.io" rel="noopener noreferrer" target="_blank">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0nuMX6kqVamOqP7AAqsBMWX8jf48H0l1GNveqPajBTArSOCDhjE8YoQhXBRnuXvVvZymCju4rvovBQ4V_is64GhJfCyDRpoM5pZQdofiSSV3M4vN9zgvBCz3RhsudR0BMYkT2dp3G_q3M0kbNltHNa5xF1hSPmGzwsEExtOl0IlLYPjymq6v9ijWRFO8Q/s300-e100/v-2.png" alt="Ad 1">
+      </a>
+        <!-- <p> Ad Description 2</p> -->
+    </div>
+</div>
+</section>
+
+</div>
+
+<script type="module" src="./assets/js/fetchBlogDetail.js"></script>
+<script type="module" src="./assets/js/main.js"></script>
+
+</body>
+</html>

@@ -21,6 +21,7 @@ toggleButton.addEventListener('click', () => {
     lightIcon.style.display = darkModeEnabled ? 'block' : 'none';
     darkIcon.style.display = darkModeEnabled ? 'none' : 'block';
 });
+  
 
 getBlogs();
 getProjects();

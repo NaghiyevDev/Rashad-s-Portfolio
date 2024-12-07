@@ -12,10 +12,9 @@ export async function getProjects() {
       const projectContainer = document.getElementById('project-container');
 
       projectList.forEach(project => {
-        console.log(project);
         const projectDiv = document.createElement('div');
         const shortContent = getShortContent(project.content, 63);
-        projectDiv.className = 'project-item'
+        projectDiv.className = 'card'
         projectDiv.innerHTML = 
         `
           <img class="project-img" src="${project.img}" alt="Project Image">

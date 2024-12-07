@@ -1,7 +1,6 @@
 // fetchBlogList.js
 import { getShortContent } from "./utils.js";
 
-
 export async function getBlogs() {
     try {
       // Fetch the JSON file
@@ -19,20 +18,21 @@ export async function getBlogs() {
          blogContainer.innerHTML = `<div>Blog Not Found</div>`;
       }
 
-
    
       latestBlogs.forEach((blog) => {
           const shortContent = getShortContent(blog.content, 300);
           const shortTitle = getShortContent(blog.title, 35)
           const blogDiv = document.createElement('div');
-          blogDiv.className = 'card-v1';
+          blogDiv.className = 'card';
           const blogImage = blog.img ? blog.img : '/assets/gallery/no-image.jpg'
           blogDiv.innerHTML = `
+          <a href="/blog-detail.html?id=${blog.id}" class="blog-detail-link">
             <img class="blog-img" src="${blogImage}" alt="${blog.title}">
            <div class="blog-content"> 
             <h2>${shortTitle}</h2>
             <p>${shortContent}</p>
            </div> 
+          </a>
           `;
           blogContainer.appendChild(blogDiv);
       });
@@ -40,3 +40,6 @@ export async function getBlogs() {
       console.error('Failed to load blogs:', error);
     }
   }
+
+
+
