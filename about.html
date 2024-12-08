@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Page</title>
+<title>WhoAmI | Rashad Naghiyev</title>
 <link rel="stylesheet" href="./assets/css/style.css">
 <!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -12,22 +12,121 @@
 
 <nav> 
     <div class="logo-block"> 
-          <a href="/">
+        <a href="/">
         Rashad's Portfolio
-          </a>
+        </a>
     </div>
-  <div class="nav-links">
-     <a href="/">Home</a>
-     <a href="">About</a>
-     <a href="">Contact</a>
-     <button class="dark-mode-btn" id="dark-mode-toggle">
-        <span id="icon-light" style="display: none;">🌞</span>
-        <span id="icon-dark">🌙</span>
-    </button>
-
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="./about.html">WhoAmi</a>
+        <button class="dark-mode-btn" id="dark-mode-toggle">
+            <span id="icon-light" style="display: none;">🌞</span>
+            <span id="icon-dark">🌙</span>
+        </button>
+    </div>
+    <div class="extra-area">
+       <!-- Animated posts -->
+        <div class="animated-posts">
+            <div id="text-container"></div>
+        </div>
+        <!-- Social links -->
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <i class="icon-font fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <i class="icon-font fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="icon-font fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <i class="icon-font fab fa-instagram"></i>
+            </a>
+        </div>
     </div>
 </nav>
 
+  <main class="whoami-content">
+    <!-- Personal Introduction -->
+    <section class="intro">
+      <h2>About Me</h2>
+      <p>Hi, I’m <strong>Rashad Naghiyev</strong>, a passionate developer, tech enthusiast, and entrepreneur. I love solving problems, building impactful solutions, and sharing knowledge.</p>
+      <p>With years of experience in programming and brand building, I strive to make technology accessible and exciting for everyone.</p>
+    </section>
 
+    <!-- Quick Facts -->
+    <section class="quick-facts">
+      <h2>Quick Facts</h2>
+      <ul>
+        <li><strong>Role:</strong> Full-stack Developer & Brand Creator</li>
+        <li><strong>Location:</strong> United States (soon to move)</li>
+        <li><strong>Experience:</strong> Python, JavaScript, Linux, Web Development</li>
+        <li><strong>Fun Fact:</strong> I sold a US-based brand for a significant amount!</li>
+      </ul>
+    </section>
+
+    <!-- Skills & Expertise -->
+    <section class="skills">
+      <h2>Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Programming</h3>
+          <p>Python, JavaScript, HTML/CSS, C (learning)</p>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <p>Linux, Git, Docker, AWS</p>
+        </div>
+        <div>
+          <h3>Other</h3>
+          <p>SEO, Branding, E-commerce</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline or Career Journey -->
+    <section class="timeline">
+      <h2>My Journey</h2>
+      <ul>
+        <li><strong>2018:</strong> Started as Brand Manager at Techno Star LLC</li>
+        <li><strong>2020:</strong> Founded a successful e-commerce brand</li>
+        <li><strong>2023:</strong> Transitioned to full-time tech development</li>
+      </ul>
+    </section>
+
+    <!-- Values/Philosophy -->
+    <section class="philosophy">
+      <h2>What I Believe</h2>
+      <blockquote>
+        <p>"Technology should empower, not overwhelm."</p>
+      </blockquote>
+      <p>My philosophy is centered around using technology to create solutions that make people's lives easier and businesses thrive.</p>
+    </section>
+  </main>
+
+   <!-- Footer -->
+  <footer class="footer">
+    <p>Want to connect? <a href="./contact.html">Reach out to me</a>.</p>
+    <div class="footer-social-links">
+        <a href="https://github.com/NaghiyevDev" target="_blank" aria-label="Github">
+                <i class="icon-font fab fa-github"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="icon-font fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="icon-font fab fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <i class="icon-font fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <i class="icon-font fab fa-instagram"></i>
+        </a>
+    </div>
+  </footer>
+
+<script type="module" src="./assets/js/main.js"> </script>
 </body>
 </html>

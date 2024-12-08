@@ -20,7 +20,7 @@ export async function getBlogs() {
 
    
       latestBlogs.forEach((blog) => {
-          const shortContent = getShortContent(blog.content, 300);
+          const shortContent = getShortContent(blog.content.trim(), 300);
           const shortTitle = getShortContent(blog.title, 35)
           const blogDiv = document.createElement('div');
           blogDiv.className = 'card';

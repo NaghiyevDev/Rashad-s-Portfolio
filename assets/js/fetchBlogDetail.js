@@ -30,9 +30,9 @@ async function getBlogDetail() {
              <h1>${blog.title}</h1>
         </div>
         <div class="blog-author">
-            <p><strong>Author:</strong> ${blog.author}</p>
-            <p><strong>Date:</strong> ${blog.date}</p>
-            <p class="category"><strong>Category:</strong> Programming Language/Python</p>
+            <p><i class="icon-font fa fa-user"></i> ${blog.author}</p>
+            <p><i class="icon-font fa fa-calendar"></i> ${blog.date}</p>
+            <p class="category"><strong>Category:</strong> Programming Language / Python</p>
         </div>
         <div class="line"></div>
         <div class="blog-image">
