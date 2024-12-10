@@ -4,7 +4,9 @@ import { getShortContent } from "./utils.js";
 
 export async function getBlogs() {
   const pageName = window.location.pathname.split('/').pop();
-  if (pageName !== 'blogs.html') {
+
+  // Allow the function to run for 'blogs.html', '/blogs', or 'blogs'
+  if (pageName && pageName !== 'blogs.html' && pageName !== '/blogs' && pageName !== 'blogs') {
     return;
   }
 
@@ -184,49 +186,55 @@ export async function getBlogs() {
 
 
 export async function getLatestBlogs() {
+  const pageName = window.location.pathname.split('/').pop();
 
-    const pageName = window.location.pathname.split('/').pop();
-    if (pageName !== 'index.html') {
+  // Allow the function to run for 'index.html', '/', or ''
+  if (pageName && pageName !== 'index.html' && pageName !== '/' && pageName !== '') {
+    return;
+  }
+
+
+  try {
+    // Fetch the JSON file
+    const response = await fetch('/assets/data/blogList.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const blogList = await response.json();
+    const blogContainer = document.getElementById('blog-container');
+
+    // Filter and sort blogs by date (assuming `date` is a property of the blog)
+    const latestBlogs = blogList
+      .filter(blog => blog.type === 'latest-blog') // Adjust as needed
+      .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort by date descending
+      .slice(0, 3); // Get the first 4 blogs
+
+    if (latestBlogs.length === 0) {
+      blogContainer.innerHTML = `<div>Blog Not Found</div>`;
       return;
     }
 
-    try {
-      // Fetch the JSON file
-      const response = await fetch('/assets/data/blogList.json');
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-  
-      const blogList = await response.json();
-      const blogContainer = document.getElementById('blog-container');
-
-      const latestBlogs = blogList.filter(blog => blog.type ?? 'latest-blog');
-      
-      if(latestBlogs.length === 0){
-         blogContainer.innerHTML = `<div>Blog Not Found</div>`;
-      }
-
-   
-      latestBlogs.forEach((blog) => {
-          const shortContent = getShortContent(blog.content.trim(), 300);
-          const shortTitle = getShortContent(blog.title, 35)
-          const blogDiv = document.createElement('div');
-          blogDiv.className = 'card';
-          const blogImage = blog.img ? blog.img : '/assets/gallery/no-image.jpg'
-          blogDiv.innerHTML = `
-          <a href="/blog-detail.html?id=${blog.id}" class="blog-detail-link">
-            <img class="blog-img" src="${blogImage}" alt="${blog.title}">
-           <div class="blog-content"> 
+    latestBlogs.forEach((blog) => {
+      const shortContent = getShortContent(blog.content.trim(), 300);
+      const shortTitle = getShortContent(blog.title, 35);
+      const blogDiv = document.createElement('div');
+      blogDiv.className = 'card';
+      const blogImage = blog.img ? blog.img : '/assets/gallery/no-image.jpg';
+      blogDiv.innerHTML = `
+        <a href="/blog-detail.html?id=${blog.id}" class="blog-detail-link">
+          <img class="blog-img" src="${blogImage}" alt="${blog.title}">
+          <div class="blog-content">
             <h2>${shortTitle}</h2>
             <p>${shortContent}</p>
-           </div> 
-          </a>
-          `;
-          blogContainer.appendChild(blogDiv);
-      });
-    } catch (error) {
-      console.error('Failed to load blogs:', error);
-    }
+          </div>
+        </a>
+      `;
+      blogContainer.appendChild(blogDiv);
+    });
+  } catch (error) {
+    console.error('Failed to load blogs:', error);
   }
+}
 
 

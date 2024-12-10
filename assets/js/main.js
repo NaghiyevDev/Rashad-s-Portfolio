@@ -4,12 +4,12 @@ import { getProjects } from './fetchMyProjects.js';
 
   
 const pageName = window.location.pathname.split('/').pop();
-
-if (pageName === 'index.html') {
+console.log(pageName);
+if (pageName === 'index.html' || pageName === '/' || pageName === '') {
   getLatestBlogs();
   getProjects();
 };
-if (pageName === 'blogs.html') {
+if (pageName === 'blogs.html' || pageName === '/blogs' || pageName === 'blogs') {
     getBlogs();
 };
 
