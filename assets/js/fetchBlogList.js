@@ -11,7 +11,9 @@ export async function getBlogs() {
   }
 
   try {
-    const response = await fetch('/assets/data/blogList.json');
+    //const response = await fetch('/assets/data/blogList.json');
+    const response = await fetch(`/ .netlify/functions/getBlogList?page=${page}&limit=10`);
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
