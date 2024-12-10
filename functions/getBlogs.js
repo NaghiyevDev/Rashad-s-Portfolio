@@ -8,7 +8,7 @@ exports.handler = async function(event, context) {
 
   try {
     // Read the blog data from the JSON file
-    const blogList = JSON.parse(fs.readFileSync(path.join(__dirname, '../../assets/data/blogList.json'), 'utf8'));
+    const blogList = JSON.parse(fs.readFileSync(path.join(__dirname, '../assets/data/blogList.json'), 'utf8'));
 
     // Calculate start and end indexes for pagination
     const start = (page - 1) * limit;
