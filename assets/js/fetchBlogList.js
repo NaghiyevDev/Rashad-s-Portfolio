@@ -2,7 +2,7 @@
 import { getShortContent } from "./utils.js";
 
 
-export async function getBlogs(page = 1) {
+export async function getBlogs() {
   const pageName = window.location.pathname.split('/').pop();
 
   // Allow the function to run for 'blogs.html', '/blogs', or 'blogs'
@@ -10,31 +10,35 @@ export async function getBlogs(page = 1) {
     return;
   }
 
+  // Get the current page from the URL query parameter or default to 1
+  const urlParams = new URLSearchParams(window.location.search);
+  let currentPage = parseInt(urlParams.get('page')) || 1;
+  console.log('Current Page: ', currentPage)
+
   try {
-    const response = await fetch(`/netlify/functions/getBlogs?page=${page}&limit=10`);
+    const response = await fetch(`/.netlify/functions/getBlogs?page=${currentPage}&limit=10`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const blogList = await response.json();
+    const { blogList, totalCount } = await response.json();
     const blogContainer = document.getElementById('blog-container');
     const paginationContainer = document.getElementById('pagination-container');
-    const blogsPerPage = 10;
+    const blogsPerPage = 9;
+
+    console.log('Blog Count: ', totalCount);
+    console.log('Blog List: ', blogList);
 
     // If no blogs are found, display "Blog Not Found" and hide pagination
-    if (!blogList || blogList.length === 0) {
+    if (!totalCount || totalCount === 0) {
       blogContainer.innerHTML = `<div>Blog Not Found</div>`;
       paginationContainer.style.display = 'none'; // Hide pagination if no blogs
       return;
     }
 
-    function renderBlogs(page) {
+    function renderBlogs() {
       blogContainer.innerHTML = '';
-      const startIndex = (page - 1) * blogsPerPage;
-      const endIndex = Math.min(startIndex + blogsPerPage, blogList.length);
-
-      for (let i = startIndex; i < endIndex; i++) {
-        const blog = blogList[i];
+      blogList.forEach((blog) => {
         const shortContent = getShortContent(blog.content.trim(), 300);
         const shortTitle = getShortContent(blog.title, 35);
         const blogDiv = document.createElement('div');
@@ -50,8 +54,9 @@ export async function getBlogs(page = 1) {
           </a>
         `;
         blogContainer.appendChild(blogDiv);
-      }
+      });
     }
+    
 
     function renderPagination(totalBlogs) {
       paginationContainer.innerHTML = '';
@@ -61,11 +66,11 @@ export async function getBlogs(page = 1) {
       if (totalPages <= 1) return;
 
       const maxLinks = 5;
-      let startPage = page <= 3 ? 1 : page - 2;
-      let endPage = page + 2 >= totalPages ? totalPages : page + 2;
+      let startPage = currentPage <= 3 ? 1 : currentPage - 2;
+      let endPage = currentPage + 2 >= totalPages ? totalPages : currentPage + 2;
 
       // Adjust pagination boundaries
-      if (page >= totalPages - 2) {
+      if (currentPage >= totalPages - 2) {
         startPage = totalPages - maxLinks + 1;
         endPage = totalPages;
       }
@@ -75,33 +80,17 @@ export async function getBlogs(page = 1) {
       // Previous link
       const prevLink = document.createElement('a');
       prevLink.className = 'page-link prev';
-      prevLink.href = '#';
+      prevLink.href = `?page=${currentPage - 1}`;
       prevLink.innerHTML = '&laquo;';
-      if (page === 1) prevLink.classList.add('disabled');
-      prevLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (page > 1) {
-          page--;
-          renderBlogs(page);
-          renderPagination(blogList.length);
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-      });
+      if (currentPage === 1) prevLink.classList.add('disabled');
       paginationContainer.appendChild(prevLink);
 
       // First page link
       if (startPage > 1) {
         const firstPageLink = document.createElement('a');
         firstPageLink.className = 'page-link';
-        firstPageLink.href = '#';
+        firstPageLink.href = '?page=1';
         firstPageLink.innerText = '1';
-        firstPageLink.addEventListener('click', (e) => {
-          e.preventDefault();
-          page = 1;
-          renderBlogs(page);
-          renderPagination(blogList.length);
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
         paginationContainer.appendChild(firstPageLink);
       }
 
@@ -110,18 +99,10 @@ export async function getBlogs(page = 1) {
         const pageLink = document.createElement('a');
         pageLink.className = 'page-link';
         pageLink.innerText = i;
-        pageLink.href = '#';
-        pageLink.dataset.page = i;
-        if (i === page) {
+        pageLink.href = `?page=${i}`;
+        if (i === currentPage) {
           pageLink.classList.add('active');
         }
-        pageLink.addEventListener('click', (e) => {
-          e.preventDefault();
-          page = Number(e.target.dataset.page);
-          renderBlogs(page);
-          renderPagination(blogList.length);
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
         paginationContainer.appendChild(pageLink);
       }
 
@@ -129,39 +110,23 @@ export async function getBlogs(page = 1) {
       if (endPage < totalPages) {
         const lastPageLink = document.createElement('a');
         lastPageLink.className = 'page-link';
-        lastPageLink.href = '#';
+        lastPageLink.href = `?page=${totalPages}`;
         lastPageLink.innerText = totalPages;
-        lastPageLink.addEventListener('click', (e) => {
-          e.preventDefault();
-          page = totalPages;
-          renderBlogs(page);
-          renderPagination(blogList.length);
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
         paginationContainer.appendChild(lastPageLink);
       }
 
       // Next link
       const nextLink = document.createElement('a');
       nextLink.className = 'page-link next';
-      nextLink.href = '#';
+      nextLink.href = `?page=${currentPage + 1}`;
       nextLink.innerHTML = '&raquo;';
-      if (page === totalPages) nextLink.classList.add('disabled');
-      nextLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (page < totalPages) {
-          page++;
-          renderBlogs(page);
-          renderPagination(blogList.length);
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-      });
+      if (currentPage === totalPages) nextLink.classList.add('disabled');
       paginationContainer.appendChild(nextLink);
     }
 
     // Initial render
-    renderBlogs(page);
-    renderPagination(blogList.length);
+    renderBlogs(currentPage);
+    renderPagination(totalCount);
 
   } catch (error) {
     console.error('Failed to load blogs:', error);

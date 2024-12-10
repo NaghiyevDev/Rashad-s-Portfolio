@@ -63,16 +63,6 @@
         "content": "<p>Ever wonder what happens in the digital world every time you blink? Here's something wild - hackers launch about 2,200 attacks every single day, which means someone's trying to break into a system somewhere every 39 seconds.</p>\n<p>And get this - while we're all worried about regular hackers, there are now AI systems out there that can craft phishing emails so convincingly, that even cybersecurity experts have trouble spotting them.</p>\n<p>What's even crazier? Some of the latest malware is like a digital chameleon - it literally watches how you try to catch it and changes its behavior to slip right past your defenses. Pretty mind-bending stuff, right?</p>\n<p>This week's roundup is packed with eye-opening developments that'll make you see your laptop in a whole new light.</p>\n<h3>⚡ Threat of the Week</h3>\n<p><strong>#T-Mobile Spots Hackers Trying to Break In:</strong> ​​U.S. telecom service provider T-Mobile caught some suspicious activity on their network recently - basically, someone was trying to sneak into their systems. The good news? They spotted it early and no customer data was stolen.</p>\n<p>While T-Mobile isn't pointing fingers directly, cybersecurity experts think they know who's behind it - a hacking group nicknamed 'Salt Typhoon,' which apparently has ties to China. What makes this really interesting is that these hackers have a brand new trick up their sleeve: they're using a previously unknown backdoor tool called GHOSTSPIDER.</p>\n<p>Think of it as a skeleton key that no one knew existed until now. They've been using this same tool to target telecom companies across Southeast Asia.</p>"
       },
       {
-        "id": 8,
-        "title": "Python Basics: A Beginner's Guide",
-        "author": "Rashad Naghiyev",
-        "date": "2024-12-06",
-        "type": "programming-blog",
-        "category": "Programming Language / Python",
-        "img": "https://cdn.activestate.com/wp-content/uploads/2021/12/python-coding-mistakes.jpg",
-        "content":"<div class='code-container'><pre>for i in range(10):                                                  for j in rangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerangerange(10):                                                          for k in range(10):                                                                  print(i, j, k)                                                                                                      </pre></div>"
-      },
-      {
         "id": 9,
         "title": "Python Basics: A Beginner's Guide 2",
         "author": "Rashad Naghiyev",

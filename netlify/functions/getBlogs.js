@@ -1,10 +1,11 @@
+// netlify/functions.getBlogs.js
 const fs = require('fs');
 const path = require('path');
 
 exports.handler = async function(event, context) {
   // Get pagination query parameters (default to page 1 and limit 10)
   const page = parseInt(event.queryStringParameters.page) || 1;
-  const limit = parseInt(event.queryStringParameters.limit) || 10;
+  const limit = parseInt(event.queryStringParameters.limit) || 9;
 
   try {
     // Read the blog data from the JSON file
@@ -17,10 +18,13 @@ exports.handler = async function(event, context) {
     // Slice the array to get the paginated blogs
     const paginatedBlogs = blogList.slice(start, end);
 
-    // Return the paginated blog list as JSON
+    // Return the paginated blog list and total number of blogs
     return {
       statusCode: 200,
-      body: JSON.stringify(paginatedBlogs),
+      body: JSON.stringify({
+        blogList: paginatedBlogs,
+        totalCount: blogList.length,  // Add totalCount to the response
+      }),
     };
   } catch (error) {
     return {
