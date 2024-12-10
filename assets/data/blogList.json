@@ -93,7 +93,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -103,7 +103,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 12,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -113,7 +113,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 13,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -123,7 +123,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 14,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -133,7 +133,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 15,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -143,7 +143,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 16,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -153,7 +153,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 17,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -163,7 +163,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 18,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -173,7 +173,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 19,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -183,7 +183,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 20,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -193,7 +193,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 21,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -203,7 +203,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 22,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -213,7 +213,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 23,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -223,7 +223,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 24,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -233,7 +233,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 25,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -243,7 +243,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 26,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -253,7 +253,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 27,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -263,7 +263,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 28,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -273,7 +273,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 29,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -283,7 +283,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 30,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -293,7 +293,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 31,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -303,7 +303,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 32,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -313,7 +313,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 33,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
@@ -323,7 +323,7 @@
       "content": "<p>Python is a versatile and powerful programming language. It allows developers to write clear and concise code. One of the key components of Python is the <strong>list</strong>, which is a collection data type used to store multiple items in a single variable.</p><p>In this blog post, we will explore the basics of Python lists and how to use loops to iterate through them.</p><div class='code-container'><pre>my_list = [1, 2, 3, 4, 5]</pre></div><p><strong>Example:</strong></p><p>Here’s how you can use a <strong>for loop</strong> to iterate through a list:</p><div class='code-container'><pre>for item in my_list: print(item)</pre></div><p>This will output each item in the list on a new line:</p><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><p><div class='blog-image'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtKLyHiBDWbyvczrNBcDGq8vWK2Koy0CS6t04qF3Z0UIK9UfvpJiAfPuP2-WK7lxjOq-EFlzJIWrZoB6biIhADrjutp84GtW0Mv6t4aGx2eylCg_NCaxDGTF5ANnGEvFL_N7fv6GkPA8PwXqlzSvuhck64LSBs9QsJPSm5Ok5tCJhyphenhyphenODrx50Xf415-GMa/s728-rw-e365/bacdoor.png' alt='Looping through a list' /></div></p><p>Lists can also hold various data types such as strings, integers, and even other lists. Let’s explore this with another example:</p><div class='code-container'><pre>mixed_list = ['apple', 2, 3.14, ['nested', 'list']]</pre></div><p>As you can see, a list can contain other lists as elements, which is often useful for more complex data structures.<a href='/'>Go to Home page</a></p><br><hr><a href='thehackernews.com'>The Hacker News saytindan istinad</a>"
     },
     {
-      "id": 10,
+      "id": 34,
       "title": "Understanding Python Lists and Loops",
       "author": "Rashad Naghiyev",
       "date": "2024-12-08",
