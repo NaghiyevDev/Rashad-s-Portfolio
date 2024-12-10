@@ -1,2 +1,8 @@
 [build]
-  functions = "functions"
+  functions = "netlify/functions"  # Path to the functions folder
+  publish = "assets"                # Path to your published assets (e.g., static files)
+
+[dev]
+  functions = "netlify/functions"  # Local functions directory during development
+  publish = "assets"                # Local folder for serving static files during dev
+

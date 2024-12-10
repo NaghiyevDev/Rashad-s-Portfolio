@@ -11,7 +11,7 @@ export async function getBlogs(page = 1) {
   }
 
   try {
-    const response = await fetch(`/ .netlify/functions/getBlogs?page=${page}&limit=10`);
+    const response = await fetch(`/netlify/functions/getBlogs?page=${page}&limit=10`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
