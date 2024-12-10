@@ -1,48 +1,47 @@
 // fetchBlogDetail.js
 
-async function getBlogDetail() {
+async function getProjectDetail() {
     try{
-        const blogDetailContainer = document.getElementById('blog-detail');
+        const projectDetailContainer = document.getElementById('project-detail');
         const params = new URLSearchParams(window.location.search);
-        const blogID = params.get('id');
+        const projectID = params.get('id');
 
-        if(!blogID){
-            blogDetailContainer.innerHTML = '<div>Blog not found.</div>'
+        if(!projectID){
+            blogDetailContainer.innerHTML = '<div>Project not found.</div>'
             return;
         }
 
-        const response = await fetch('/assets/data/blogList.json')
+        const response = await fetch('/assets/data/projectList.json')
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
 
-        const blogList = await response.json();
-        const blog = blogList.find(b => b.id === parseInt(blogID));
+        const projectList = await response.json();
+        const project = projectList.find(p => p.id === parseInt(projectID));
 
-        if(!blog){
-            blogDetailContainer.innerHTML = '<div>Blog not found.</div>'
+        if(!project){
+            projectDetailContainer.innerHTML = '<div>Project not found.</div>'
             return;
         }
 
          // Render the blog detail
-         blogDetailContainer.innerHTML = `
-         <div class="blog-title">
-             <h1>${blog.title}</h1>
+         projectDetailContainer.innerHTML = `
+         <div class="project-title">
+             <h1>${project.title}</h1>
         </div>
-        <div class="blog-author">
-            <p><i class="icon-font fa fa-user"></i> ${blog.author}</p>
-            <p><i class="icon-font fa fa-calendar"></i> ${blog.date}</p>
-            <p class="category"><strong>Category:</strong> Programming Language / Python</p>
-        </div>
-        <div class="line"></div>
-        <div class="blog-image">
-            <img src="${blog.img || '/assets/gallery/no-image.jpg'}" alt="${blog.title}">
-        </div>
-        <div class="blog-content">
-          ${blog.content}
+        <div class="project-author">
+            <p><i class="icon-font fa fa-user"></i> ${project.author}</p>
+            <p><i class="icon-font fa fa-calendar"></i> ${project.date}</p>
         </div>
         <div class="line"></div>
-            <div class="blog-footer">
+        <div class="project-image">
+            <img src="${project.img || '/assets/gallery/no-image.jpg'}" alt="${project.title}">
+        </div>
+        <div class="project-content">
+          ${project.content}
+        </div>
+        <div class="line"></div>
+            <div class="project-footer">
                 <div class="social-icons">
                     <a href="https://facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
@@ -61,8 +60,8 @@ async function getBlogDetail() {
         `;
 
     } catch (error) {
-        console.error(`Failed to load blog - id:(${blogID}), Error:`, error);
+        console.error(`Failed to load blog - id:(${projectID}), Error:`, error);
     }
 }
 
-getBlogDetail();
+getProjectDetail();

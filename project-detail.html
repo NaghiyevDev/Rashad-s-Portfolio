@@ -12,12 +12,13 @@
 
 <nav> 
     <div class="logo-block"> 
-        <a href="/">
+        <a href="./index.html">
         Rashad's Portfolio
         </a>
     </div>
     <div class="nav-links">
-        <a href="/">Home</a>
+        <a href="./index.html">Home</a>
+        <a href="./blogs.html">Blogs</a>
         <a href="./about.html">WhoAmi</a>
         <button class="dark-mode-btn" id="dark-mode-toggle">
             <span id="icon-light" style="display: none;">🌞</span>
@@ -50,6 +51,85 @@
     </div>
 </nav>
 
+<!--
+<div class="banner-block">
+     <img class="banner-img" src="https://www.internetcreation.net/wp-content/uploads/2015/04/banner-web-development.png">
+          <img class="banner-img" src="https://www.internetcreation.net/wp-content/uploads/2015/04/banner-web-development.png">
+
+     <div class="banner-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my projects and journey</p>
+    </div>
+</div>
+-->
+
+<div class="ads-banner-block">
+    <a href="https://appomni.com/reports/state-of-saas-security/?utm_campaign=State%20of%20SaaS%20Security%20Report%202024%20FY25&utm_source=the-hacker-news&utm_medium=content-recommendation&utm_term=v2&utm_content=december-2024" rel="noopener noreferrer" target="_blank">
+     <img class="banner-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHerhP5oX79YIjnxWlF3152QbykMSJxmmArwPW9EIMxMsA00kw5sk-1cGWdsKo-lcYeFBjoczvf0jMRwqENU1yxP5ZLLPsGoLqqD_Fclagse8ZPJfXfXywi3Kul6A3tslYVQ3e_BGNQNKncmvFmH1ykYq84jR-h1RXR1T6NeiKhO3FqavOtWFQgJrVDWsR/s728-rw-e100/sss-v2-d.png">
+    </a>
+</div>
+
+<main class="project-detail-page">
+
+<section class="project-detail-container">
+    <!-- Project Content -->
+    <div class="project-detail">
+       <div class="card" id="project-detail">
+        <!-- Dynamic project details will be rendered here -->
+       </div>
+    </div>
+</section>
+
+<aside class="left-side-bar">
+    <section>
+        <div class="project-features">
+            <h1>Details</h1>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <strong>Url</strong>: 
+                <a href="https://naghiyev.com" target="_blank">https://naghiyev.com</a>
+              </li>
+              <li><strong>Created</strong>: 2023-09-15</li>
+              <li><strong>Last Updated</strong>: 2023-09-15</li>
+              <li><strong>Category</strong>: Web Development</li>
+              <li><strong>Technologies</strong>: 
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">Linux</span>
+              </li>
+            </ul>
+          </div>
+          
+        <!-- Advertisement Section -->
+        <div class="ad-section">
+            <div class="ad-item">
+                <img src="./assets/gallery/navigif.gif" alt="Ad 1">
+               <!-- <p> Ad Description 1</p> -->
+            </div>
+
+             <div class="ad-item">
+             <a href="https://wing.security/free-saas-discovery/" rel="noopener noreferrer" target="_blank">
+                <img class="ad-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvmAyaMRgm1DtNQlVSFMAAcWRINotu7O4RKbN2H1AX3ScnDRdmTqI8M2JuUCIcv-bjdE8z_0LURp6l3q9fvBgEUELkbvQflxj7JbEmF_zdxMfrQeToW9TSVTGdtWN1SaYrLwM0oeGFOLf4DjfuArlr33tmKAPCU5urwML5aQ7FoJpLm4AuEFOoKvubY514/s300-e100/side-3.png" alt="Ad 2">
+              </a>
+               <!-- <p> Ad Description 1</p> -->
+            </div>
+            <div class="ad-item">
+              <a href="https://www.vonahi.io" rel="noopener noreferrer" target="_blank">
+                <img class="ad-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0nuMX6kqVamOqP7AAqsBMWX8jf48H0l1GNveqPajBTArSOCDhjE8YoQhXBRnuXvVvZymCju4rvovBQ4V_is64GhJfCyDRpoM5pZQdofiSSV3M4vN9zgvBCz3RhsudR0BMYkT2dp3G_q3M0kbNltHNa5xF1hSPmGzwsEExtOl0IlLYPjymq6v9ijWRFO8Q/s300-e100/v-2.png" alt="Ad 3">
+              </a>
+                <!-- <p> Ad Description 2</p> -->
+            </div>
+        </div>
+    </section>
+  </aside>
+
+</main>
+
+
+
  <!-- Footer -->
   <footer class="footer">
     <p>Want to connect? <a href="./contact.html">Reach out to me</a>.</p>
@@ -72,6 +152,8 @@
     </div>
   </footer>
 
-<script type="module" src="./assets/js/main.js"> </script>
+<script type="module" src="./assets/js/fetchProjectDetail.js"> </script>
+<script type="module" src="./assets/js/global.js"> </script>
+
 </body>
 </html>
