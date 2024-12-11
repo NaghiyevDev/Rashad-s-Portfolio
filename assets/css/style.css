@@ -265,16 +265,236 @@ nav a {
     transition: background-color 0.3s;
 }
 
+/* Guide Section */
+.guide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-unit) var(--spacing-unit);
+    margin: var(--spacing-unit) 0;
+    background-color: var(--bg-color);
+  }
+  
+  .guide .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    padding: var(--spacing-unit);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-color)
+  }
+  
+  .guide .card-content {
+    text-align: center;
+  }
+  
+  .guide ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .guide ul li {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .guide ul li::before {
+    content: '➤';
+    color:  var(--primary-color);
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .guide ul strong {
+    color: var(--primary-accent);
+  }
+  
+  .guide ul li:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+  }
+  
+
+/* About me section */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Increased gap for better spacing */
+    padding: var(--spacing-unit) var(--spacing-unit);
+    margin: var(--spacing-unit) 0;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+  }
+  
+  .about-me .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 700px; /* Sets a maximum width for better design */
+    padding: var(--spacing-unit);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-color);
+    flex-wrap: wrap; /* Adapts layout for smaller devices */
+    transition: transform 0.3s ease;
+  }
+
+  .about-me .card:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+  }
+  
+  .about-me .card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px; /* Adds spacing between text elements */
+    padding: 20px;
+    margin: 20px;
+    max-width: 800px;
+  }
+  
+  .about-me .card-content h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .about-me .card-content p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }
+  
+  .about-me .card-image {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-me img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Guide Section */
+    .guide {
+      padding: 15px;
+      margin: 15px 0;
+    }
+  
+    .guide .card {
+      padding: 10px;
+      border-width: 1px; /* Adjust for smaller devices */
+    }
+  
+    .guide ul li {
+      font-size: 1rem; /* Reduce font size for readability on smaller screens */
+    }
+  
+    .guide ul li::before {
+      font-size: 1rem;
+    }
+  
+    .guide ul strong {
+      font-size: 1rem;
+    }
+  
+    /* About Me Section */
+    .about-me {
+      flex-direction: column; /* Stacks content vertically on small screens */
+      gap: 15px;
+      padding: 15px;
+    }
+  
+    .about-me .card {
+      flex-direction: column;
+      align-items: center; /* Centers content on mobile */
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .about-me .card-content {
+      padding: 10px;
+      margin: 0;
+    }
+  
+    .about-me .card-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .about-me .card-content p {
+      font-size: 1rem;
+    }
+  
+    .about-me img {
+      width: 150px; /* Smaller image size for mobile */
+      height: 150px;
+    }
+  }
+  
+  /* Extra Small Devices */
+  @media screen and (max-width: 480px) {
+    .guide ul li {
+      font-size: 0.9rem;
+    }
+  
+    .about-me .card-content h1 {
+      font-size: 1.2rem;
+    }
+  
+    .about-me .card-content p {
+      font-size: 0.9rem;
+    }
+  
+    .about-me img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  
 /* Blog List Styles */
+.blog-list-page {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent sidebar from wrapping */
+    align-items: flex-start; /* Align items at the top */
+    justify-content: center;
+}
+
 .blog-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
-    align-items: baseline;
+    align-items: center;
     padding: var(--spacing-unit) var(--spacing-unit);
     margin: var(--spacing-unit) 0;
     gap: calc(2*var(--spacing-unit));
+}
+
+.blog-list-page .blog-list {
+    width: 80%;
 }
 
 .blog-list .card {
@@ -845,7 +1065,6 @@ nav a {
   }
   
   .pagination-container {
-    max-width: 600px;
     text-align: center;
     width: 100%; /* Ensure full width on smaller screens */
   }
@@ -909,9 +1128,13 @@ nav a {
       gap: 6px; /* Reduce gap between pagination links */
     }
   
-    .pagination-container {
-      max-width: 100%;
+    .pagination-section {
+        padding: 15px 0;
     }
+    .pagination-container {
+        max-width: 300px;
+    }
+
   }
   
   @media (max-width: 480px) {
@@ -923,9 +1146,11 @@ nav a {
     .pagination {
       gap: 4px; /* Reduce gap further on very small screens */
     }
-  
     .pagination-section {
-      padding: 15px 0; /* Adjust padding for smaller devices */
+        padding: 15px 0;
+    }
+    .pagination-container {
+        max-width: 300px;
     }
   }
   
@@ -945,17 +1170,29 @@ nav a {
         font-size: small;
         font-weight: 100;
     }
-    .project-list .card, .blog-list .card {
+    .project-list-page {
+        flex-direction: column; /* Stack cards vertically */
+    }
+    .project-list .card, .blog-list .card, .blog-list-page .blog-list .card {
         width: 100%;
     }
-    .blog-list, .blog-detail-page, .blog-detail, .project-list {
+    .blog-list-page, .blog-detail-page, .blog-detail, .project-list {
         flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+    }
+    .blog-list-page .left-side-bar {
+        order: 2;
+        width: 100%; /* Full width for the sidebar */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-unit);
     }
     .project-detail-page {
         flex-direction: column; /* Stack cards vertically */
         align-items: center;
     }
-    .blog-detail-container, .project-detail-container {
+    .blog-detail-container, .blog-list, .blog-list-page .blog-list, .project-detail-container {
         width: 100%;
         padding-left: 0;
         align-items: center;
