@@ -38,7 +38,7 @@ export async function getBlogs() {
 
       for (let i = startIndex; i < endIndex; i++) {
         const blog = blogList[i];
-        const shortContent = getShortContent(blog.content.trim(), 300);
+        const shortContent = getShortContent(blog.content.trim(), 100);
         const shortTitle = getShortContent(blog.title, 35);
         const blogDiv = document.createElement('div');
         blogDiv.className = 'card';
