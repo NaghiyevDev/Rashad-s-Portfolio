@@ -15,3 +15,16 @@ export function getShortContent(content, maxCount) {
   
     return textContent;
   }
+
+export function escapeForHTML(input) {
+    const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;',
+        '`': '&#96;',
+        '/': '&#x2F;'
+    };
+    return input.replace(/[&<>"'`/]/g, char => map[char]);
+}

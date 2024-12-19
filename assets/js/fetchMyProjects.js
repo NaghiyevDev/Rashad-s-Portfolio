@@ -1,17 +1,19 @@
 // fetchMyProjects.js
 import { getShortContent } from "./utils.js";
+import { CONFIG } from './config.js';
 
+const BASE_URL = CONFIG.API_URL;
 
 export async function getProjects() {
    try{
-      const response = await fetch('/assets/data/projectList.json');
+      const response = await fetch(`${BASE_URL}/projects/`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const projectList = await response.json();
       const projectContainer = document.getElementById('project-container');
 
-      projectList.forEach(project => {
+      projectList.data.forEach(project => {
         const shortContent = getShortContent(project.content.trim(), 63);
         const shortTitle = getShortContent(project.title, 35)
         const projectDiv = document.createElement('div');
@@ -19,7 +21,7 @@ export async function getProjects() {
         projectDiv.innerHTML = 
         `
         <a href="/project-detail.html?id=${project.id}" class="project-detail-link">
-          <img class="project-img" src="${project.img}" alt="Project Image">
+          <img class="project-img" src="${BASE_URL}/${project.img}" alt="Project Image">
           <div class="project-content">
             <h1> ${shortTitle} </h1>
               <p> ${shortContent} </p>

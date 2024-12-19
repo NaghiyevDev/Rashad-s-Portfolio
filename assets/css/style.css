@@ -41,7 +41,7 @@
 
 .dark-mode {
     /* Dark Mode Colors rgb(65, 78, 7); */
-    --bg-color: #121212;
+    --bg-color: #080808;
     --text-color: #ffffff;
     --link-color: #3498db;
     --card-v1-color: rgb(57, 58, 54); /* standart: rgb(38, 46, 4) */
@@ -379,7 +379,7 @@ nav a {
 }
 
 /* Slide Images */
-.slide img {
+.slide img, .slide a {
   width: 1100px;
   height: 100%;
   object-fit: cover;
@@ -1023,8 +1023,12 @@ nav a {
 .ads-banner-block a {
     display: inline-block;
     text-decoration: none;
+    transition: transform 0.3s ease;
 }
 
+.ads-banner-block a:hover {
+    transform: scale(1.05);
+}
 
 /* About Page * /
 /* Main Content */
@@ -1439,4 +1443,140 @@ nav a {
 .footer-social-links .icon-font {
     width: 1em;
     font-size: 25px;
+}
+
+/* Contact Form Styling */
+.contact-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group textarea {
+  resize: none; /* Disable manual resizing */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  width: 100%; /* Ensure the width is fixed */
+  min-height: 100px; /* Set a minimum height */
+  max-height: 300px; /* Set a maximum height for scrolling */
+  line-height: 1.5; /* Optional: Improve readability */
+  padding: 10px; /* Maintain consistent padding */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  font-size: 14px; /* Optional: Adjust font size */
+}
+
+
+/* Custom scrollbar styling for modern browsers */
+textarea::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  background: #f1f1f1; /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounded edges */
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #007bff, #0056b3); /* Gradient thumb for a modern look */
+  border-radius: 10px; /* Rounded edges of the scrollbar thumb */
+  border: 2px solid #f1f1f1; /* Optional: Adds space between the thumb and track */
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #0056b3, #003d82); /* Darker gradient on hover */
+}
+
+textarea::-webkit-scrollbar-thumb:active {
+  background: #003d82; /* Solid color on active interaction */
+}
+
+/* Firefox scrollbar customization */
+textarea {
+  scrollbar-width: thin; /* Thinner scrollbar for a sleek design */
+  scrollbar-color: #007bff #f1f1f1; /* Thumb and track colors */
+}
+
+/* Optional: Add transition for smooth scrollbar hover effects */
+textarea::-webkit-scrollbar-thumb {
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.submit-button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #0056b3;
+}
+
+.submit-button:active {
+  background: #003d82;
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 15px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 12px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
