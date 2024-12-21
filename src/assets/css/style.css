@@ -171,7 +171,7 @@ nav a {
 @media (max-width: 768px) {
   .nav-links a {
     font-size: small;
-    font-weight: 100;
+    font-weight: 200;
   }
 }
 /* Extra nav area */
@@ -654,6 +654,28 @@ nav a {
     margin-bottom: var(--spacing-unit);
     border-radius: 10px;
 }
+
+@media (max-width: 1200px) {
+    .blog-detail-container {
+      width: 80%; /* Set width for responsiveness */
+      padding-left: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-detail-container {
+    width: 80%; /* Set width for responsiveness */
+    padding-left: 160px;
+}
+}
+
+@media (max-width: 480px) {
+  .blog-detail-container {
+    width: 80%; /* Set width for responsiveness */
+    padding-left: 150px;
+}
+}
+
 
 .blog-detail .blog-title {
     margin-bottom: var(--spacing-unit);
