@@ -631,17 +631,19 @@ nav a {
     flex-wrap: nowrap; /* Prevent sidebar from wrapping */
     align-items: flex-start; /* Align items at the top */
     justify-content: center;
+    height: 100%;
+    margin-bottom: 100px;
 }
 
 /* Blog Content Section */
 .blog-detail-container {
-    display: flex;
-    width: 80%; /* Set width for responsiveness */
-    margin: auto;
-    gap: var(--spacing-unit); /* Space between the blog and ads */
-    justify-content: center;
-    align-items: center;
-    padding-left: 180px;
+  display: flex;
+  height: 100%;
+  width: 80%; /* Set width for responsiveness */
+  padding-left: 140px;
+  gap: var(--spacing-unit); /* Space between the blog and ads */
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-detail {
@@ -653,27 +655,6 @@ nav a {
     width: 100%;
     margin-bottom: var(--spacing-unit);
     border-radius: 10px;
-}
-
-@media (max-width: 1200px) {
-    .blog-detail-container {
-      width: 80%; /* Set width for responsiveness */
-      padding-left: 180px;
-  }
-}
-
-@media (max-width: 768px) {
-  .blog-detail-container {
-    width: 80%; /* Set width for responsiveness */
-    padding-left: 160px;
-}
-}
-
-@media (max-width: 480px) {
-  .blog-detail-container {
-    width: 80%; /* Set width for responsiveness */
-    padding-left: 150px;
-}
 }
 
 
@@ -732,7 +713,8 @@ nav a {
 /* Container for preformatted code */
 .blog-detail .blog-content .code-container {
     display: flex;
-    width: 800px; /* Set width for responsiveness */
+    width: 80%; /* Default to full width */
+    max-width: 800px; /* Limit the maximum width */
     overflow-x: auto; /* Adds horizontal scrolling for long lines */
     padding: var(--spacing-unit) 10px; /* Optional: adds space around the code */
     box-sizing: border-box;
@@ -741,6 +723,59 @@ nav a {
     border: 1px solid var(--code-container-color);
     margin: 10px 50px;
     gap: var(--spacing-unit)
+}
+
+/* For large desktops (wider than 1200px) */
+@media (min-width: 1200px) {
+  .blog-detail .blog-content .code-container {
+    max-width: 900px; /* Slightly increase maximum width */
+    padding: var(--spacing-unit) 15px; /* Add more padding for spacious screens */
+    font-size: 16px; /* Larger font size for readability */
+  }
+}
+
+/* For standard desktops and large tablets in landscape (between 1025px and 1200px) */
+@media (max-width: 1200px) and (min-width: 1025px) {
+  .blog-detail .blog-content .code-container {
+    max-width: 750px;
+    padding: var(--spacing-unit) 12px;
+  }
+}
+
+/* For smaller tablets and larger phones (between 769px and 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .blog-detail .blog-content .code-container {
+    max-width: 600px; /* Reduce width for tablets */
+    padding: var(--spacing-unit) 8px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+/* For standard mobile devices (between 481px and 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .blog-detail .blog-content .code-container {
+    max-width: 100%; /* Full width */
+    padding: var(--spacing-unit) 6px; /* Reduce padding further */
+    font-size: 13px; /* Smaller font size */
+  }
+}
+
+/* For very small devices (480px and below) */
+@media (max-width: 480px) {
+  .blog-detail .blog-content .code-container {
+    max-width: 100%;
+    padding: var(--spacing-unit) 4px; /* Minimal padding */
+    font-size: 12px; /* Smallest font size */
+  }
+}
+
+/* For ultra-small devices (e.g., older smartphones, 320px and below) */
+@media (max-width: 320px) {
+  .blog-detail .blog-content .code-container {
+    max-width: 100%;
+    padding: var(--spacing-unit) 2px; /* Tight padding */
+    font-size: 10px; /* Smallest readable font size */
+  }
 }
 
 /* Preformatted code styling */
@@ -1307,7 +1342,7 @@ nav a {
         align-items: center;
         gap: var(--spacing-unit);
     }
-    .project-detail-page {
+    .project-detail-page, .blog-detail-page {
         flex-direction: column; /* Stack cards vertically */
         align-items: center;
     }
