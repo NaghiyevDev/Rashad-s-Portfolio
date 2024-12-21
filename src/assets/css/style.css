@@ -167,6 +167,13 @@ nav a {
     justify-content: center;
 }
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links a {
+    font-size: small;
+    font-weight: 100;
+  }
+}
 /* Extra nav area */
 .extra-area {
     padding: 10px 20px;

@@ -1,0 +1,22 @@
+{
+  "name": "rashad-s-portfolio",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cssnano-cli": "^1.0.5",
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.37.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

@@ -1,7 +1,11 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
-const url = require('url'); // Import URL module
+import http from 'http';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Define __dirname manually for ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Define the port number
 const PORT = 8080;
@@ -14,7 +18,7 @@ console.log('BASE DIR:', BASE_DIR);
 // Create the server
 const server = http.createServer((req, res) => {
     // Parse the URL to separate path and query
-    const parsedUrl = url.parse(req.url, true);
+    const parsedUrl = new URL(req.url, `http://${req.headers.host}`);
     const pathname = parsedUrl.pathname; // The requested path without query params
 
     // Construct the requested file path

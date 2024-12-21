@@ -50,7 +50,7 @@ function renderBlogs(blogs, container) {
 
     blogDiv.innerHTML = `
       <a href="/blog-detail.html?id=${blog.id}" class="blog-detail-link">
-        <img class="blog-img" src="${blogImg}" alt="${blog.title}">
+        <img class="blog-img" src="${blogImg}" alt="${blog.title}" loading="lazy">
         <div class="blog-content">
           <h2>${shortTitle}</h2>
           <p>${shortContent}</p>
@@ -142,7 +142,7 @@ export async function getLatestBlogs() {
       const blogImage = blog.img ? blog.img : '/assets/gallery/no-image.jpg';
       blogDiv.innerHTML = `
         <a href="/blog-detail.html?id=${blog.id}" class="blog-detail-link">
-          <img class="blog-img" src="${BASE_URL}/${blogImage}" alt="${blog.title}">
+          <img class="blog-img" src="${BASE_URL}/${blogImage}" alt="${blog.title}" loading="lazy">
           <div class="blog-content">
             <h2>${shortTitle}</h2>
             <p>${shortContent}</p>

@@ -1,50 +1,55 @@
 // fetchBlogDetail.js
 import { CONFIG } from './config.js';
+import { setPageMeta } from './utils.js';
 
 const BASE_URL = CONFIG.API_URL;
 
-async function getProjectDetail() {
+async function getBlogDetail() {
     try{
-        const projectDetailContainer = document.getElementById('project-detail');
+        const blogDetailContainer = document.getElementById('blog-detail');
         const params = new URLSearchParams(window.location.search);
-        const projectID = params.get('id');
+        const blogID = params.get('id');
 
-        if(!projectID){
-            blogDetailContainer.innerHTML = '<div>Project not found.</div>'
+        if(!blogID){
+            blogDetailContainer.innerHTML = '<div>Blog not found.</div>'
             return;
         }
 
-        const response = await fetch(`${BASE_URL}/projects/${projectID}`)
+        const response = await fetch(`${BASE_URL}/blogs/${blogID}`)
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
 
-        const project = await response.json();
-        console.log('Project:', project)
+        const blog = await response.json();
+        console.log('Blog: ',blog)
+        
 
-        if(!project.data){
-            projectDetailContainer.innerHTML = '<div>Project not found.</div>'
+        if(!blog.data){
+            blogDetailContainer.innerHTML = '<div>Blog not found.</div>'
             return;
         }
 
+        await setPageMeta(blog);
+
          // Render the blog detail
-         projectDetailContainer.innerHTML = `
-         <div class="project-title">
-             <h1>${project.data.title}</h1>
+         blogDetailContainer.innerHTML = `
+         <div class="blog-title">
+             <h1>${blog.data.title}</h1>
         </div>
-        <div class="project-author">
-            <p><i class="icon-font fa fa-user"></i> ${project.data.author}</p>
-            <p><i class="icon-font fa fa-calendar"></i> ${project.data.date}</p>
-        </div>
-        <div class="line"></div>
-        <div class="project-image">
-            <img src="${BASE_URL}/${project.data.img || '/assets/gallery/no-image.jpg'}" alt="${project.data.title}">
-        </div>
-        <div class="project-content">
-          ${project.data.content}
+        <div class="blog-author">
+            <p><i class="icon-font fa fa-user"></i> ${blog.data.author}</p>
+            <p><i class="icon-font fa fa-calendar"></i> ${blog.data.date}</p>
+            <p class="category"><strong>Category:</strong> ${blog.data.category}</p>
         </div>
         <div class="line"></div>
-            <div class="project-footer">
+        <div class="blog-image">
+            <img src="${BASE_URL}/${blog.data.img || '/assets/gallery/no-image.jpg'}" alt="${blog.data.title}" loading="lazy">
+        </div>
+        <div class="blog-content">
+          ${blog.data.content}
+        </div>
+        <div class="line"></div>
+            <div class="blog-footer">
                 <div class="social-icons">
                     <a href="#" class="social-icon facebook" data-platform="facebook" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
@@ -62,29 +67,30 @@ async function getProjectDetail() {
             </div>
         `;
 
-        document.querySelectorAll('.project-content pre').forEach(preTag => {
+        document.querySelectorAll('.blog-content pre').forEach(preTag => {
             preTag.removeAttribute('style'); // Removes the inline 'style' attribute
         });
 
-        // Attach social media share functionality
-        const socialLinks = document.querySelectorAll('.social-icon');
-        socialLinks.forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault(); // Prevent default link behavior
-                const platform = link.getAttribute('data-platform');
-                shareOnPlatform(platform, project.data);
-            });
-        });
+         // Attach social media share functionality
+         const socialLinks = document.querySelectorAll('.social-icon');
+         socialLinks.forEach(link => {
+             link.addEventListener('click', (event) => {
+                 event.preventDefault(); // Prevent default link behavior
+                 const platform = link.getAttribute('data-platform');
+                 shareOnPlatform(platform, blog.data);
+             });
+         });
 
     } catch (error) {
-        console.error(`Failed to load project - id:(), Error:`, error);
+        console.error(`Failed to load blog - id:(), Error:`, error);
     }
 }
 
-function shareOnPlatform(platform, project) {
-    const url = `${window.location.origin}/project-detail.html?id=${project.id}`;
-    const title = encodeURIComponent(project.title);
-    const content = encodeURIComponent(project.content.substring(0, 150));
+
+function shareOnPlatform(platform, blog) {
+    const url = `${window.location.origin}/blog-detail.html?id=${blog.id}`;
+    const title = encodeURIComponent(blog.title);
+    const content = encodeURIComponent(blog.content.substring(0, 150));
 
     let shareURL = '';
 
@@ -110,4 +116,4 @@ function shareOnPlatform(platform, project) {
     window.open(shareURL, '_blank', 'noopener,noreferrer');
 }
 
-await getProjectDetail();
+getBlogDetail();

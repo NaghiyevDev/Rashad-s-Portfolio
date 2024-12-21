@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /404.html
+Disallow: /500.html
+
+Sitemap: https://rashad.pikacco.com/sitemap.xml

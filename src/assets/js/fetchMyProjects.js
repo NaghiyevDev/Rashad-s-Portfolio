@@ -21,7 +21,7 @@ export async function getProjects() {
         projectDiv.innerHTML = 
         `
         <a href="/project-detail.html?id=${project.id}" class="project-detail-link">
-          <img class="project-img" src="${BASE_URL}/${project.img}" alt="Project Image">
+          <img class="project-img" src="${BASE_URL}/${project.img}" alt="Project Image" loading="lazy">
           <div class="project-content">
             <h1> ${shortTitle} </h1>
               <p> ${shortContent} </p>

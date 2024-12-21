@@ -1,2 +1,8 @@
 # Local Netlify folder
 .netlify
+
+# Commands folder
+commands/
+
+# Node.js dependencies
+node_modules/
